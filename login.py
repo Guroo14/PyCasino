@@ -12,10 +12,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 class Ui_OtherWindow1(object):
-    def setupUi(self, OtherWindow1):
-        OtherWindow1.setObjectName("MainWindow")
-        OtherWindow1.setFixedSize(1385, 895)
-        self.centralwidget = QtWidgets.QWidget(OtherWindow1)
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1372, 887)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-4, 2, 1371, 861))
@@ -144,7 +144,7 @@ class Ui_OtherWindow1(object):
 "}")
         self.textEdit.setObjectName("textEdit")
         self.textEdit_2 = QtWidgets.QTextEdit(self.centralwidget)
-        self.textEdit_2.setGeometry(QtCore.QRect(570, 700, 361, 31))
+        self.textEdit_2.setGeometry(QtCore.QRect(560, 760, 291, 31))
         self.textEdit_2.setStyleSheet("QTextEdit {\n"
 "background-color: transparent;\n"
 "color: #F0CC5C;\n"
@@ -174,46 +174,78 @@ class Ui_OtherWindow1(object):
 "border: 1.5px solid #858585;\n"
 "}")
         self.pushButton_2.setObjectName("pushButton_2")
-        OtherWindow1.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(OtherWindow1)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1370, 21))
+        self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_6.setGeometry(QtCore.QRect(640, 700, 121, 61))
+        self.pushButton_6.setStyleSheet("QPushButton {\n"
+"    background-color: #F4DB62;\n"
+"      color: #001C16;\n"
+"     padding: 5px 10px;\n"
+"     margin: 8px 0;\n"
+"    border: none;\n"
+"    cursor: pointer;\n"
+"    width: 100%;\n"
+"    opacity: 0.9;\n"
+"    border-radius: 15px;\n"
+"    border: 1.5px solid #222222;\n"
+"    font-size: 20px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"border: 1.5px solid #858585;\n"
+"}")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.lineEdit_6 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_6.setGeometry(QtCore.QRect(530, 790, 351, 31))
+        self.lineEdit_6.setStyleSheet("QLineEdit {\n"
+"    background-color: transparent;\n"
+"    border: none;\n"
+"    padding: 6px 12px;\n"
+"    font-size: 12px;\n"
+"    color: #ff0000;\n"
+"}")
+        self.lineEdit_6.setText("")
+        self.lineEdit_6.setReadOnly(True)
+        self.lineEdit_6.setPlaceholderText("")
+        self.lineEdit_6.setObjectName("lineEdit_6")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1372, 21))
         self.menubar.setObjectName("menubar")
-        OtherWindow1.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(OtherWindow1)
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
-        OtherWindow1.setStatusBar(self.statusbar)
+        MainWindow.setStatusBar(self.statusbar)
 
-        self.retranslateUi(OtherWindow1)
-        QtCore.QMetaObject.connectSlotsByName(OtherWindow1)
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, OtherWindow1):
+    def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        OtherWindow1.setWindowTitle(_translate("OtherWindow1", "OtherWindow1"))
-        self.lineEdit_5.setPlaceholderText(_translate("OtherWindow1", "Enter Your Password"))
-        self.lineEdit_2.setPlaceholderText(_translate("OtherWindow1", "Enter Your Nickname"))
-        self.pushButton_5.setText(_translate("OtherWindow1", "Baccarat"))
-        self.pushButton_5.setText(_translate("OtherWindow1", "Baccarat"))
-        self.pushButton_4.setText(_translate("OtherWindow1", "Blackjack"))
-        self.pushButton_3.setText(_translate("OtherWindow1", "𝐎𝐑𝐎𝐒𝐍𝐄𝐁𝐈"))
-        self.textEdit.setHtml(_translate("OtherWindow1", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.lineEdit_5.setPlaceholderText(_translate("MainWindow", "Enter Your Password"))
+        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Enter Your Nickname"))
+        self.pushButton_5.setText(_translate("MainWindow", "Baccarat"))
+        self.pushButton_4.setText(_translate("MainWindow", "Blackjack"))
+        self.pushButton_3.setText(_translate("MainWindow", "𝐎𝐑𝐎𝐒𝐍𝐄𝐁𝐈"))
+        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:600;\">LOGIN</span></p></body></html>"))
-        self.textEdit_2.setHtml(_translate("OtherWindow1", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">Are You Not Registered Yet? DO IT THEN!</span></p></body></html>"))
-        self.pushButton_2.setText(_translate("OtherWindow1", "Registration"))
-
+        self.pushButton_2.setText(_translate("MainWindow", "Registration"))
+        self.pushButton_6.setText(_translate("MainWindow", "Enter"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    OtherWindow1 = QtWidgets.QMainWindow()
+    MainWindow = QtWidgets.QMainWindow()
     ui = Ui_OtherWindow1()
-    ui.setupUi(OtherWindow1)
-    OtherWindow1.show()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
     sys.exit(app.exec_())
