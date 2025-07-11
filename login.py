@@ -223,6 +223,7 @@ class Ui_OtherWindow1(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.lineEdit_5.setPlaceholderText(_translate("MainWindow", "Enter Your Password"))
+        self.lineEdit_5.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Enter Your Nickname"))
         self.pushButton_5.setText(_translate("MainWindow", "Baccarat"))
         self.pushButton_4.setText(_translate("MainWindow", "Blackjack"))
@@ -232,11 +233,7 @@ class Ui_OtherWindow1(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt; font-weight:600;\">LOGIN</span></p></body></html>"))
-        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">Are You Not Registered Yet? DO IT THEN!</span></p></body></html>"))
+
         self.pushButton_2.setText(_translate("MainWindow", "Registration"))
         self.pushButton_6.setText(_translate("MainWindow", "Enter"))
 
