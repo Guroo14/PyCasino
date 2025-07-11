@@ -14,19 +14,21 @@ class Login(QMainWindow, Ui_OtherWindow1):
       self.pushButton_2.clicked.connect(self.home_page)
       self.pushButton_4.clicked.connect(self.to_bj)
       self.pushButton_5.clicked.connect(self.to_bacc)
+      self.pushButton_6.clicked.connect(self.login_User)
 
     def home_page(self):
         if self.parent_window:
             self.parent_window.show()
         self.close()
     def login_User(self):
-        try:
-            nickname = self.lineEdit_2.text()
-            self.database.nickname_exists(nickname)
+        nickname = self.lineEdit_2.text()
+        if self.database.nickname_exists(nickname):
             self.lineEdit_2.clear()
-            return
-        except Exception as e:
-            print(e)
+            self.lineEdit_6.setText("თქვენ წარმატებით გაიარეთ ავტორიზაცია")
+        else:
+            self.lineEdit_6.setText("თქვენ ვერ გაიარეთ ავტორიზაცია")
+
+
     def to_bj(self):
         from Blackjack_logic import Blackjack
         self.blackjack_window = Blackjack()
